@@ -1,0 +1,244 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------------------------------------------*/
+
+body {
+    position: sticky;
+    font-family: 'Gemunu Libre';
+    background: url('./images/__original_drawn_by_gerar_dc__de92fd001634276b72c5fbe418e1570c.png') no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+}
+
+.img-container {
+    position: relative;
+    height: 100%;
+    width: 35vw;
+    background-image: url("./images/__original_drawn_by_waneella__046319f50d5c5cfa3d92a2d683fd2ff3.gif");
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.main-image {
+    height: 100%;
+}
+
+.title-container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Permanent Marker';
+}
+
+.main-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 65vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.art-credit {
+    color: white;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-sword {
+    height: 2.5rem;
+}
+
+a {
+    color: inherit;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+h2, h3 {
+    font-size: 1.5rem;
+    padding: 5px 20px;
+}
+
+p {
+    padding-left: 20px;
+}
+
+.sign-up {
+    margin-top: 30px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sign-up-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin:  15px 0px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(175, 171, 171);
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-valid {
+    box-shadow:none;
+    border: 2px solid rgb(86, 196, 86) !important;
+    outline:none;
+}
+
+.input-invalid {
+    box-shadow:none;
+    border: 2px solid rgb(175, 28, 28) !important;
+    outline:none;
+}
+
+.display-check:after {
+    content: "";
+    display: block;
+    background-image: url("/images/check.png");
+    background-size: 100%;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 0 6px 0 0;
+    float: right;
+}
+
+.display-cross:after {
+    content: "";
+    display: block;
+    background-image: url("/images/cross.png");
+    background-size: 100%;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 0 6px 0 0;
+    float: right;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(52, 128, 241);
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px 40px;
+    font-family: inherit;
+    margin: 0px 0px 20px 20px;
+    cursor: pointer;
+}
+
+.account-log-in {
+    margin-top: 5px;
+}
+
+.account-log-in p {
+    margin-bottom: 10px;
+}
+
+.github {
+    position: fixed;
+    bottom: 0;
+    width: 65vw;
+    background-color: rgb(35, 56, 75);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.github p {
+    padding-right: 30px;
+}
+
+.github p:before {
+    content: "";
+    display: block;
+    background-image: url("/images/github.png");
+    background-size: 100%;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 0 6px 0 0;
+    float: left;
+}

@@ -5,9 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gemunu+Libre|Silkscreen|Permanent+Marker">
+    <script src="script.js" defer></script>
+    <title>Sign-up</title>
 </head>
 <body>
-  
+    <div class="main-container">
+        <div class="img-container">
+            <div class="title-container">
+                <img src="./images/swords.png" alt="swords" class="img-sword">
+                <h1 class="title">Sakura River</h1>
+            </div>
+            <p class="art-credit">Art by <a href="https://danbooru.donmai.us/posts?tags=waneella&z=1">Waneella</a></p>
+        </div>
+        <div class="main-section">
+            <div class="main-text">
+                <h2>Sakura River takes place in the fantasy world of Kakurokokorowombo, which is home to seven nations, each of which is tied to a different element and ruled by a different god. The story follows the Onii-chan, who has traveled across countless worlds with their twin sibling before becoming separated in Kakurokokorowombo. The Onii-chan travels in search of the lost sibling with their companion Stardust and becomes involved in the affairs of Kakurokokorowombo's nations.</h2>
+            </div>
+            <form class="sign-up">
+                <h3>Become the Onii-chan today.</h3>
+                <p>Required camps are marked with *</p>
+                    <ul class="sign-up-form">
+                        <div class="form-cell">
+                            <li>
+                                <label for="username">Username <span aria-label="required">*</span></label>
+                                <input type="text" name="username" id="username" placeholder="Onii-chan" minlength="3" maxlength="14" required>
+                            </li>
+                            <li>
+                                <label for="id-card">ID Card Number <span aria-label="required">*</span></label>
+                                <input type="tel" name="id-card" id="id-card" placeholder="12345678" maxlength="8" pattern="[0-9]{8}" required>
+                            </li>
+                        </div>
+                        <div class="form-cell">
+                            <li>
+                                <label for="email">Email <span aria-label="required">*</span></label>
+                                <input type="email" name="email" id="email" placeholder="onii-chan@chan.com" required>
+                            </li>
+                            <li>
+                                <label for="phone">Phone Number </label>
+                                <input type="tel" name="phone" id="phone" placeholder="3314586548" minlength="10" maxlength="20">
+                            </li>
+                        </div>
+                        <div class="form-cell">
+                            <li>
+                                <label for="password">Password <span aria-label="required">*</span></label>
+                                <input type="password" name="password" id="password" minlength="8" maxlength="24" required>
+                            </li>
+                            <li>
+                                <label for="password-c">Repeat Password <span aria-label="required">*</span></label>
+                                <input type="password" name="password-c" id="password-c" required>
+                            </li>
+                        </div>
+                    </ul>
+                <button>Create Account</button>
+            </form>
+            <div class="account-log-in">
+                <p>Already have an account?</p>
+                <button>Log in</button>
+            </div>
+            <div class="github">
+                <p><a href="https://github.com/TomasAntunesNR">TomasAntunesNR</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
